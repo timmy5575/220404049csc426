@@ -47,7 +47,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "https://two20404049csc426.onrender.com/",
+      "https://two20404049csc426.onrender.com/login",
       {
         username: formData.username,
         password: formData.password,
