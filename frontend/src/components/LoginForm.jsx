@@ -7,6 +7,8 @@ function LoginForm() {
     password: "",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
+
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("");
 
@@ -102,18 +104,27 @@ const handleSubmit = async (e) => {
             onChange={handleChange}
           />
         </div>
+<div className="input-group">
+  <label>Password</label>
 
-        <div className="input-group">
-          <label>Password</label>
+  <div className="password-wrapper">
+    <input
+      type={showPassword ? "text" : "password"}
+      name="password"
+      placeholder="Enter Password"
+      value={formData.password}
+      onChange={handleChange}
+    />
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter Password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </div>
+    <button
+      type="button"
+      className="toggle-password"
+      onClick={() => setShowPassword(!showPassword)}
+    >
+      {showPassword ? "Hide" : "Show"}
+    </button>
+  </div>
+</div>
 
         <div className="buttons">
           <button type="submit">

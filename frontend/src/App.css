@@ -277,9 +277,36 @@ button[type="submit"]:hover {
 
 }
 
-/* ===========================
-   FLOATING DEMO
-=========================== */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 80px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: transparent !important;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  width: auto;
+  box-shadow: none;
+}
+
+.toggle-password:hover {
+  color: #1d4ed8;
+  transform: translateY(-50%);
+}
 
 .floating-card {
 
