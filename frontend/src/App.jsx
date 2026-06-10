@@ -1,11 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginForm from "./components/LoginForm";
+import Dashboard from "./components/Dashboard";
 import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      <LoginForm />
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<LoginForm />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,289 @@
+/* ===========================
+   DASHBOARD WRAPPER
+=========================== */
+
+.dashboard-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   GLASS UTILITY
+=========================== */
+
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.dash-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dash-logo {
+  font-size: 24px;
+}
+
+.dash-school {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.dash-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.dash-username {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.logout-btn {
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(220, 38, 38, 0.45);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  flex: unset;
+}
+
+.logout-btn:hover {
+  background: rgba(220, 38, 38, 0.75);
+  transform: translateY(-1px);
+}
+
+/* ===========================
+   WELCOME BANNER
+=========================== */
+
+.dash-banner {
+  padding: 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dash-banner h2 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.highlight {
+  color: #93c5fd;
+}
+
+.dash-banner p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+}
+
+.matric-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.matric-badge span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.matric-badge strong {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* ===========================
+   STAT CARDS
+=========================== */
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stat-icon {
+  font-size: 28px;
+}
+
+.stat-value {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* ===========================
+   COURSE TABLE SECTION
+=========================== */
+
+.dash-section {
+  padding: 28px 30px;
+}
+
+.section-title {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.course-table th {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.course-table td {
+  color: rgba(255, 255, 255, 0.88);
+  padding: 14px 14px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.course-table tr:last-child td {
+  border-bottom: none;
+}
+
+.course-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+
+/* GRADE BADGES */
+
+.grade-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.grade-A {
+  background: rgba(22, 163, 74, 0.25);
+  color: #86efac;
+}
+
+.grade-B {
+  background: rgba(37, 99, 235, 0.25);
+  color: #93c5fd;
+}
+
+.grade-C {
+  background: rgba(234, 179, 8, 0.25);
+  color: #fde047;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.dash-footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 700px) {
+  .dash-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dash-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .matric-badge {
+    align-items: flex-start;
+  }
+
+  .dash-school {
+    font-size: 14px;
+  }
+
+  .course-table th,
+  .course-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+}
