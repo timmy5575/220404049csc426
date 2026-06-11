@@ -147,7 +147,7 @@ Frontend runs on `http://localhost:5173`
 
 ## Student Info
 
-- **Name:** Timmy
+- **Name:** oluwadare oluwatimilehin paul
 - **Matric No:** 220404049
 - **Course:** CSC 426 
 - **Institution:** Adekunle Ajasin University, Akungba-Akoko
